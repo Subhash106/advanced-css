@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
+      rel="stylesheet"
+    />
+
+    <!-- <link rel="stylesheet" href="css/icon-font.css" /> -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+
+    <title>Natoursss | Exciting tours for adventurous people</title>
+  </head>
+  <body>
+    <header class="header">
+      <picture class="header__logo-box">
+        <source
+          srcset="
+            img/logo-green-small-1x.png 1x,
+            img/logo-green-small-2x.png 2x
+          "
+          media="(max-width:37.5em)"
+        />
+        <img
+          srcset="img/logo-green-2x.png 2x, img/logo-green-1x.png 1x"
+          alt="Logo"
+          class="header__logo"
+        />
+      </picture>
+
+      <div class="header__content">
+        <h1 class="heading-primary">
+          <span class="heading-primary--main">Outdoors</span>
+          <span class="heading-primary--sub">is where life happens</span>
+        </h1>
+        <a href="#section-tours" class="btn btn--white btn--animated"
+          >Discover our tours</a
+        >
+      </div>
+    </header>
+
+    <main>
+      <!-- <section>
+        <div class="row">
+          <div class="col-1-of-2">col-1-of-2</div>
+          <div class="col-1-of-2">col-1-of-2</div>
+        </div>
+        <div class="row">
+          <div class="col-1-of-4">
+            hello
+          </div>
+          <div class="col-1-of-4">col-1-of-4</div>
+          <div class="col-1-of-4">col-1-of-4</div>
+          <div class="col-1-of-4">col-1-of-4</div>
+        </div>
+        <div class="row">
+          <div class="col-1-of-4">col-1-of-4</div>
+          <div class="col-3-of-4">col-3-of-4</div>
+        </div>
+        <div class="row">
+          <div class="col-1-of-2">
+            <div class="image-collection">
+              <img src="img/nat-1.jpg" alt="Image" />
+              <img src="img/nat-2.jpg" alt="Image" />
+              <img src="img/nat-3.jpg" alt="Image" />
+              <img src="img/nat-4.jpg" alt="Image" />
+              <img src="img/nat-5.jpg" alt="Image" />
+              <img src="img/nat-6.jpg" alt="Image" />
+              <img src="img/nat-7.jpg" alt="Image" />
+            </div>
+          </div>
+          <div class="col-1-of-2">col-2-of-4</div>
+        </div>
+      </section> -->
+      <section class="section-tours" id="section-tours">
+        <div class="card">
+          <a href="#popup" class="button">Discover more</a>
+        </div>
+        <div class="card">
+          <a href="#popup" class="button">Discover more</a>
+        </div>
+        <div class="card">
+          <a href="#popup" class="button">Discover more</a>
+        </div>
+      </section>
+    </main>
+
+    <div class="popup" id="popup">
+      <div class="popup__content">
+        <div class="popup__image--box">
+          <img src="./img/nat-8.jpg" class="popup__image" alt="img" />
+          <img src="./img/nat-9.jpg" class="popup__image" alt="img" />
+        </div>
+        <div class="popup__text--box">
+          <a href="#section-tours" class="popup__close"></a>
+          <h2 class="heading-secondary">Start booking now</h2>
+          <h3 class="heading-tertiary">
+            Important &ndash; Please read these terms and conditions before
+            booking
+          </h3>
+          <p class="tnc">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos quos
+            quidem consequatur, quam reprehenderit, harum mollitia repellat
+            voluptates magni beatae assumenda! Aspernatur libero tempore,
+            quisquam officiis voluptatum nulla rerum est? Lorem ipsum dolor sit
+            amet consectetur adipisicing elit. Laboriosam officiis repellat
+            possimus reiciendis exercitationem quod dolor mollitia.
+            Necessitatibus illum nostrum ex asperiores, ipsum deserunt tempore
+            facilis hic laborum quam dicta.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
