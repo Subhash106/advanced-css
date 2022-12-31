@@ -1,0 +1,44 @@
+.heading-primary {
+  color: $white;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin-bottom: 3.2rem;
+
+  &--main {
+    display: block;
+    font-size: 6rem;
+    letter-spacing: 1.8rem;
+    animation: moveInLeft 3s;
+
+    @include respond(phone) {
+      letter-spacing: 1.2rem;
+    }
+  }
+
+  &--sub {
+    display: block;
+    font-size: 2rem;
+    letter-spacing: 1.2rem;
+    animation: moveInRight 3s;
+
+    @include respond(phone) {
+      letter-spacing: 0.8rem;
+    }
+  }
+}
+
+.heading-secondary {
+  font-size: 4rem;
+  color: $primary-main;
+  text-transform: uppercase;
+
+  &:hover {
+    transform: skew(-10deg);
+  }
+}
+
+.heading-tertiary {
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  margin-bottom: 1.2rem;
+}

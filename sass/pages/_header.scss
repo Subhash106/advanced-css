@@ -1,0 +1,47 @@
+.header {
+  position: relative;
+  height: 95vh;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($primary-main-light, 0.8),
+      rgba($primary-main-dark, 0.8)
+    ),
+    url(../img/hero.jpg);
+  background-size: cover;
+  background-position: top;
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__logo-box {
+    position: absolute;
+    top: 4rem;
+    left: 4rem;
+  }
+
+  &__logo {
+    height: 3.5rem;
+  }
+
+  &__content {
+    text-align: center;
+  }
+}
+
+.image-collection {
+  padding: 6rem;
+  display: flex;
+  justify-content: center;
+  clip-path: circle(100% at 50% 236%);
+  background: burlywood;
+
+  img {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    border: 2px solid burlywood;
+    margin-left: -1rem;
+  }
+}
