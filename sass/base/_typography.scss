@@ -1,3 +1,12 @@
+body {
+  font-family: "Lato", sans-serif;
+  font-size: $default-font-size;
+  line-height: 1.7;
+  color: $primary-gray-dark;
+  font-weight: 400;
+  padding: 3rem;
+}
+
 .heading-primary {
   color: $white;
   text-transform: uppercase;
@@ -28,17 +37,31 @@
 }
 
 .heading-secondary {
-  font-size: 4rem;
-  color: $primary-main;
+  font-size: 3.2rem;
   text-transform: uppercase;
 
+  -ms-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-image: linear-gradient(
+    to right,
+    $primary-main-light,
+    $primary-main-dark
+  );
+  color: transparent;
+
   &:hover {
-    transform: skew(-10deg);
+    transform: skew(10deg, 3deg);
   }
 }
 
 .heading-tertiary {
-  font-size: 1.3rem;
+  font-size: $default-font-size;
   text-transform: uppercase;
-  margin-bottom: 1.2rem;
+}
+
+.paragraph-1 {
+  font-size: $default-font-size;
+  line-height: 1.75;
 }
