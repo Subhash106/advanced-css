@@ -396,6 +396,19 @@ body {
   background: rgba(196, 0, 196, 0.7);
   transform: rotateX(-90deg) translateZ(50px); }
 
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.15; }
+  .bg-video--content {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+
 .row {
   max-width: 114rem;
   margin: 0 auto; }
@@ -480,6 +493,10 @@ body {
   .composition:hover .composition__img:not(:hover) {
     transform: scale(0.95); }
 
+.section-stories {
+  padding: 20rem 0;
+  position: relative; }
+
 .section-tours {
   padding: 20rem 0;
   background-color: #f7f7f7;
@@ -509,3 +526,49 @@ body {
     -webkit-background-clip: text;
     -moz-background-clip: text;
     background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)); }
+
+.story {
+  width: 75%;
+  margin: 0 auto;
+  padding: 6rem;
+  padding-left: 9rem;
+  border-radius: 3px;
+  background-color: white;
+  box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.15);
+  transform: skewX(-10deg); }
+  .story > * {
+    transform: skewX(10deg); }
+  .story__shape {
+    width: 15rem;
+    height: 15rem;
+    background-color: orange;
+    float: left;
+    -webkit-shape-outside: circle(50% at 50% 50%);
+    shape-outside: circle(50% at 50% 50%);
+    -webkit-clip-path: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%);
+    transform: translateX(-3rem) skewX(10deg);
+    position: relative; }
+  .story__image {
+    height: 100%;
+    transform: translateX(-4rem) scale(1.4);
+    transition: all 0.3s ease-in-out; }
+  .story__caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 20%);
+    color: white;
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    text-align: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s ease-in-out; }
+  .story:hover .story__caption {
+    transform: translate(-50%, -50%);
+    visibility: visible;
+    opacity: 1; }
+  .story:hover .story__image {
+    transform: scale(1) translateX(-4rem);
+    filter: blur(3px) brightness(80%); }
