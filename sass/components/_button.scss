@@ -88,3 +88,29 @@
     transform: translateY(0);
   }
 }
+
+.btn--radio {
+  display: inline-block;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  border: 3px solid $primary-main;
+  position: absolute;
+  left: 0;
+  top: -2px;
+
+  &::after {
+    content: "";
+    display: inline-block;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    background-color: $primary-main;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: all 0.3 ease-in-out;
+  }
+}

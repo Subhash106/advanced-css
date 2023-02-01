@@ -46,3 +46,14 @@
   padding: 20rem 0;
   position: relative;
 }
+
+.section-booking {
+  padding: 20rem 0;
+  background-image: linear-gradient(
+    to right bottom,
+    $primary-main-light,
+    $primary-main-dark
+  );
+  position: relative;
+  height: 100vh;
+}
