@@ -4,7 +4,6 @@ body {
   line-height: 1.7;
   color: $primary-gray-dark;
   font-weight: 400;
-  padding: 3rem;
 }
 
 .heading-primary {
@@ -20,6 +19,7 @@ body {
     animation: moveInLeft 3s;
 
     @include respond(phone) {
+      font-size: 5.5rem;
       letter-spacing: 1.2rem;
     }
   }
@@ -31,6 +31,7 @@ body {
     animation: moveInRight 3s;
 
     @include respond(phone) {
+      font-size: 1.8rem;
       letter-spacing: 0.8rem;
     }
   }
@@ -39,6 +40,10 @@ body {
 .heading-secondary {
   font-size: 3.2rem;
   text-transform: uppercase;
+
+  @include respond(phone) {
+    font-size: 3rem;
+  }
 
   -ms-background-clip: text;
   -moz-background-clip: text;
@@ -59,9 +64,17 @@ body {
 .heading-tertiary {
   font-size: $default-font-size;
   text-transform: uppercase;
+
+  @include respond(phone) {
+    font-size: 1.4rem;
+  }
 }
 
 .paragraph-1 {
   font-size: $default-font-size;
   line-height: 1.75;
+
+  @include respond(phone) {
+    font-size: 1.4rem;
+  }
 }

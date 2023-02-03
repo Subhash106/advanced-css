@@ -6,6 +6,8 @@
 
 .composition {
   position: relative;
+  width: 100%;
+  min-height: 30rem;
 
   &__img {
     max-width: 20rem;
@@ -39,6 +41,23 @@
 
   &:hover &__img:not(:hover) {
     transform: scale(0.95);
+  }
+}
+
+.section-features {
+  padding: 20rem 0;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($primary-main-light, 0.8),
+      rgba($primary-main-dark, 0.8)
+    ),
+    url(../img/nat-4.jpg);
+  background-size: cover;
+  clip-path: polygon(0 20%, 100% 0, 100% 80%, 0 100%);
+  margin-top: -15rem;
+
+  @include respond(tab-port) {
+    clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
   }
 }
 

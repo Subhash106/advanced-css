@@ -6,43 +6,45 @@
   }
 }
 
-// Media query manager
+@mixin absCenter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
-/*
-0-600      Phones
-600-900    Tablets portrait
-900-1200   Tablets landscape
-1200-1800  Normal [desktop first]
-
-1800+      [big-desktops] 
+/**
+---------------------------------------------
+--------------MEDIA QUERY MANAGER------------
+---------------------------------------------
+0-600       phones
+600-900     tab-port
+900-1200    tab-land
+1200-1800   for desktop first
+1800+       big desktops
 */
 
-//1em = 16px
 @mixin respond($breakpoint) {
-  @if $breakpoint == phone {
+  @if ($breakpoint == phone) {
     @media (max-width: 37.5em) {
-      //600px
       @content;
     }
   }
 
-  @if $breakpoint == tab-port {
+  @if ($breakpoint == tab-port) {
     @media (max-width: 56.25em) {
-      //900px
       @content;
     }
   }
 
-  @if $breakpoint == tab-land {
+  @if ($breakpoint == tab-land) {
     @media (max-width: 75em) {
-      //1200px
       @content;
     }
   }
 
-  @if $breakpoint == big-desktop {
+  @if ($breakpoint == big-desk) {
     @media (min-width: 112.5em) {
-      //1800px
       @content;
     }
   }

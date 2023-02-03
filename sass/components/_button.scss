@@ -106,10 +106,7 @@
     height: 1.5rem;
     border-radius: 50%;
     background-color: $primary-main;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    @include absCenter;
     opacity: 0;
     transition: all 0.3 ease-in-out;
   }
