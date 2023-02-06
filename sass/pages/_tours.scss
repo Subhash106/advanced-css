@@ -2,4 +2,8 @@
   padding: 20rem 0;
   background-color: $primary-gray-light-1;
   margin-top: -15rem;
+
+  @include respond(tab-port) {
+    padding: 15rem 0 10rem 0;
+  }
 }

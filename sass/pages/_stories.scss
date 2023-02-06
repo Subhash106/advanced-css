@@ -12,6 +12,11 @@
     transform: skewX(10deg);
   }
 
+  @include respond(tab-port) {
+    padding: 2rem;
+    padding-left: 5rem;
+  }
+
   &__shape {
     width: 15rem;
     height: 15rem;
