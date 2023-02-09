@@ -11,6 +11,12 @@
   visibility: hidden;
   transition: opacity 0.3s;
 
+  @supports (backdrop-filter: blur(10px)) {
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    background-color: rgba(0, 0, 0, 0.15);
+  }
+
   &__content {
     width: 75%;
     @include absCenter;
